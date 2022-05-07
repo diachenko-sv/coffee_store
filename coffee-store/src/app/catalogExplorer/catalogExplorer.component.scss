@@ -1,0 +1,98 @@
+.catalog-exp {
+    width: 100%;
+    margin-top: 200px;
+    &__title {
+        font-size: 44px;
+    }
+    &__section {
+        margin-top: 80px;
+    }
+    &__product-cards {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__product-card {
+        box-sizing: border-box;
+        width: calc(25% - 15px);
+        height: 450px;
+        border-radius: 20px;
+        box-shadow: 0px 0px 30px rgba(146, 146, 146, 0.2);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+        font-size: 24px;
+        transition: .2s ease-in;
+        overflow: hidden;
+        .catalog-exp__img {
+            margin-top: 50px;
+            width: 300px;
+            height: 285px;
+            transition: .4s ease;
+        }
+        .catalog-exp__span {
+            margin-top: 30px;
+            transition: .4s ease;
+        }
+        .catalog-exp__button {
+            position: relative;
+            bottom: -50px;
+            width: 70%;
+            height: 60px;
+            color: white;
+            background-color: rgb(249, 179, 0);
+            border: none;
+            border-radius: 5px;
+            transition: visibility .5s, opacity 0s;
+            opacity: 0;
+            visibility: hidden;
+        }
+        .catalog-exp__button:hover {
+            background-color: rgb(226, 163, 0);
+            // box-shadow: 0 0 20px 2px rgba(255, 183, 0, 0.5);
+            transition: .4s ease-in;
+        }
+        .catalog-exp__button:active {
+            background-color: rgb(255, 200, 0);
+            box-shadow: 0 0 5px 1px rgb(255, 200, 0);
+            transition: .4s ease;
+        }
+    }
+    &__product-card:hover {
+        .catalog-exp__img {
+            margin-top: 0px;
+            width: 300px;
+            height: 285px;
+            transition: .5s ease;
+        }
+        .catalog-exp__span {
+            margin-top: 10px;
+            transition: .5s ease;
+        }
+        .catalog-exp__button {
+            bottom: -30px;
+            opacity: 1;
+            visibility: visible;
+            transition: 0s;
+        }
+    }
+}
+
+
+/*
+background-color: rgb(249, 179, 0);
+        border: none;
+        border-radius: 5px;
+        transition: .1s ease-in;
+    }
+    &__button:hover {
+        background-color: rgb(226, 163, 0);
+        // box-shadow: 0 0 20px 2px rgba(255, 183, 0, 0.5);
+        transition: .1s ease-in;
+    }
+    &__button:active {
+        background-color: rgb(249, 179, 0);
+        box-shadow: 0 0 10px 1px rgb(255, 200, 0);
+        transition: .1s ease;
+*/
