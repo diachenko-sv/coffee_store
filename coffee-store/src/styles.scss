@@ -10,6 +10,12 @@ body {
     width: 85%;
 }
 
+@media screen and (max-width: 900px) {
+    body {
+        width: 90%;
+    }
+}
+
 a {
     text-decoration: none;
     color: black;

@@ -8,27 +8,31 @@
     &__logo {
         white-space: nowrap;
     }
+    nav::before,
+    nav::after {
+        visibility: hidden;
+    }
     .nav {
+        display: flex;
+        justify-content: space-between;
         li:not(:first-child) {
             margin-left: 100px;
         }
-        display: flex;
-        justify-content: space-between;
-        // &__catalog-products a {}
-        // &__blog a {}
-        // &__contacts a {}
-    }
-    .nav {
         li {
+            white-space: nowrap;
             border-bottom: 2px solid white;
             transition: .05s ease-in;
         }
-    }
-    .nav {
         li:hover {
             border-bottom: 2px solid rgb(249, 179, 0);
             transition: .1s ease-in;
         }
+        &__burger-menu {
+            display: none;
+        }
+        // &__catalog-products a {}
+        // &__blog a {}
+        // &__contacts a {}
     }
     .menu {
         display: flex;
@@ -70,5 +74,81 @@
         left: 0;
         background-color: rgba(100, 100, 100, 0.2);
         box-shadow: 0px 2px 5px 1px rgba(100, 100, 100, 0.2);
+    }
+    @media screen and (max-width: 1500px) {
+        .nav li:not(:first-child) {
+            margin-left: 30px;
+        }
+    }
+    @media screen and (max-width: 1000px) {
+        height: 50px;
+        &::after {
+            top: 50px;
+        }
+        .nav,
+        .menu {
+            position: absolute;
+            background-color: red;
+            z-index: -999;
+            // visibility: hidden;
+        }
+        .nav {
+            background-color: rgb(249, 179, 0);
+            top: 10%;
+            // top: -10%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            flex-direction: column;
+            font-size: 3rem;
+            z-index: 999;
+            li {
+                margin-left: 200px;
+            }
+            a {
+                color: white;
+            }
+        }
+        .menu {
+            top: 500px;
+            left: 100px;
+        }
+        .nav {
+            li {
+                margin-left: 0;
+            }
+            &__burger-menu {
+                display: block;
+                position: absolute;
+                top: 25px;
+                width: 40px;
+                height: 3px;
+                right: 10%;
+                background-color: rgb(249, 179, 0);
+                visibility: visible;
+            }
+        }
+        nav::before,
+        nav::after {
+            content: "";
+            position: absolute;
+            display: block;
+            width: 40px;
+            height: 3px;
+            top: 15px;
+            right: 10%;
+            background-color: rgb(249, 179, 0);
+            visibility: visible;
+            overflow: hidden;
+            // z-index: 999;
+        }
+        nav::after {
+            top: 35px;
+        }
+    }
+}
+
+@media screen and (max-device-width: 800px) {
+    .header {
+        // display: none;
     }
 }
