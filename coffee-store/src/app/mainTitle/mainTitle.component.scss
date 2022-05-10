@@ -72,7 +72,7 @@
         background-size: contain;
         z-index: -300;
     }
-    @media screen and (max-device-width: 1700px) {
+    @media screen and (max-width: 1700px) {
         &__coffee-cup {
             top: 470px;
             right: 15%;
@@ -88,7 +88,7 @@
             height: 1500px;
         }
     }
-    @media screen and (max-device-width: 1500px) {
+    @media screen and (max-width: 1500px) {
         margin-top: 70px;
         &__header {
             font-size: 64px;
@@ -117,7 +117,7 @@
             height: 1300px;
         }
     }
-    @media screen and (max-device-width: 1300px) {
+    @media screen and (max-width: 1300px) {
         margin-top: 50px;
         &__header {
             font-size: 56px;
@@ -148,7 +148,7 @@
             height: 1300px;
         }
     }
-    @media screen and (max-device-width: 1100px) {
+    @media screen and (max-width: 1100px) {
         &__content {
             width: 550px;
         }
@@ -168,7 +168,7 @@
             height: 900px;
         }
     }
-    @media screen and (max-device-width: 1000px) {
+    @media screen and (max-width: 1000px) {
         margin-top: 20px;
         &__header {
             margin: 30px 0;
@@ -201,7 +201,7 @@
             height: 900px;
         }
     }
-    @media screen and (max-device-width: 900px) {
+    @media screen and (max-width: 900px) {
         margin-top: 20px;
         width: 90%;
         &__content {
@@ -246,7 +246,7 @@
             height: 900px;
         }
     }
-    @media screen and (max-device-width: 650px) {
+    @media screen and (max-width: 650px) {
         &__coffee-cup {
             top: 200px;
             right: 3%;
@@ -264,7 +264,7 @@
             opacity: 0.7;
         }
     }
-    @media screen and (max-device-width: 500px) {
+    @media screen and (max-width: 500px) {
         &__header {
             font-size: 2rem;
             margin: 30px 0;

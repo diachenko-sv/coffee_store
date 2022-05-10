@@ -1,7 +1,10 @@
-<div class="header">
+<div class="{{ header }}">
     <div class="header__logo"><a href="/coffee-store/src/index.html">Diachenko</a></div>
+    <div class="background-isolator"></div>
     <nav>
-        <span class="nav__burger-menu"></span>
+        <div class="burger-menu__wrapper" (click)="changeBurgerMenu()">
+            <span class="nav__burger-menu"></span>
+        </div>
         <ul class="nav">
             <li class="nav__catalog-products">
                 <a href="">Каталог товаров</a>
