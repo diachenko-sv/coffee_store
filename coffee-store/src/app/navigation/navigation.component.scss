@@ -5,30 +5,41 @@
     width: 100%;
     height: 100px;
     position: inherit;
+    background-color: white;
+    z-index: 999;
+    .background-isolator {
+        position: absolute;
+        width: 0;
+        height: 0;
+    }
     &__logo {
         white-space: nowrap;
     }
+    nav::before,
+    nav::after {
+        visibility: hidden;
+    }
     .nav {
+        display: flex;
+        justify-content: space-between;
         li:not(:first-child) {
             margin-left: 100px;
         }
-        display: flex;
-        justify-content: space-between;
-        // &__catalog-products a {}
-        // &__blog a {}
-        // &__contacts a {}
-    }
-    .nav {
         li {
+            white-space: nowrap;
             border-bottom: 2px solid white;
             transition: .05s ease-in;
         }
-    }
-    .nav {
         li:hover {
             border-bottom: 2px solid rgb(249, 179, 0);
             transition: .1s ease-in;
         }
+        &__burger-menu {
+            display: none;
+        }
+        // &__catalog-products a {}
+        // &__blog a {}
+        // &__contacts a {}
     }
     .menu {
         display: flex;
@@ -36,29 +47,29 @@
         div:not(:first-child) {
             margin-left: 50px;
         }
-        &__search {
-            width: 32px;
-            height: 32px;
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-image: url('/assets/images/navigation/search.png');
-            cursor: pointer;
-        }
-        &__cart {
-            width: 34px;
-            height: 34px;
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-image: url('/assets/images/navigation/cart.png');
-            cursor: pointer;
-        }
+        &__search,
+        &__cart,
         &__account {
             width: 32px;
             height: 32px;
             background-size: contain;
             background-repeat: no-repeat;
-            background-image: url('/assets/images/navigation/account.png');
+            transition: .4s ease;
             cursor: pointer;
+        }
+        &__search {
+            background-image: url('/assets/images/navigation/black/search.png');
+        }
+        &__cart {
+            background-image: url('/assets/images/navigation/black/cart.png');
+        }
+        &__account {
+            background-image: url('/assets/images/navigation/black/account.png');
+        }
+        &__search:hover,
+        &__cart:hover,
+        &__account:hover {
+            transform: scale(115%);
         }
     }
     &::after {
@@ -71,4 +82,160 @@
         background-color: rgba(100, 100, 100, 0.2);
         box-shadow: 0px 2px 5px 1px rgba(100, 100, 100, 0.2);
     }
+    @media screen and (max-width: 1500px) {
+        .nav li:not(:first-child) {
+            margin-left: 30px;
+        }
+    }
+    @media screen and (max-width: 1000px) {
+        height: 50px;
+        .background-isolator {
+            position: absolute;
+            width: 70%;
+            height: 50px;
+            top: 0;
+            right: 0;
+            background-color: white;
+            z-index: 300;
+        }
+        &::after {
+            top: 50px;
+        }
+        .nav,
+        .menu {
+            position: absolute;
+            top: -200px;
+            right: 10%;
+            background-color: rgb(249, 179, 0);
+            transition: .6s ease;
+            z-index: 100;
+        }
+        .nav {
+            flex-direction: column;
+            height: 150px;
+            width: 300px;
+            font-size: 2rem;
+            margin: 0;
+            padding: 10px;
+            box-shadow: 0px 5px 10px 2px rgb(249, 179, 0);
+            border-left: 2px solid wheat;
+            border-right: 2px solid wheat;
+            visibility: hidden;
+            z-index: 200;
+            li:not(:first-child) {
+                margin-left: 15px;
+            }
+            li {
+                border-bottom: 2px solid rgb(249, 179, 0);
+                margin-left: 15px;
+            }
+            a:hover {
+                border-bottom: 2px solid white;
+            }
+            &__burger-menu {
+                display: block;
+                position: inherit;
+                top: 25px;
+                left: 10px;
+                width: 40px;
+                height: 3px;
+                background-color: rgb(249, 179, 0);
+                opacity: 1;
+                transition: .4s ease;
+                cursor: pointer;
+            }
+            a {
+                color: white;
+            }
+        }
+        .burger-menu__wrapper {
+            position: absolute;
+            top: 0;
+            width: 60px;
+            height: 50px;
+            right: 10%;
+            cursor: pointer;
+            z-index: 999;
+        }
+        .menu {
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            justify-content: space-evenly;
+            padding-top: 30px;
+            padding-bottom: 20px;
+            top: -200px;
+            right: 10%;
+            width: 320px;
+            border-left: 2px solid wheat;
+            border-right: 2px solid wheat;
+            border-bottom: 2px solid wheat;
+            box-shadow: 0px 2px 10px 2px rgb(249, 179, 0);
+            overflow: hidden;
+            div:not(:first-child) {
+                margin: 0;
+            }
+            li {
+                margin: 0;
+            }
+            &__search {
+                width: 28px;
+                height: 28px;
+            }
+            &__cart {
+                width: 28px;
+                height: 28px;
+            }
+            &__account {
+                width: 28px;
+                height: 28px;
+            }
+        }
+        nav::before,
+        nav::after {
+            content: "";
+            position: absolute;
+            display: block;
+            width: 40px;
+            height: 3px;
+            top: 15px;
+            right: calc(10% + 10px);
+            background-color: rgb(249, 179, 0);
+            transition: .4s ease;
+            visibility: visible;
+            overflow: hidden;
+            z-index: 999;
+        }
+        nav::after {
+            top: 35px;
+        }
+    }
 }
+
+//
+//burger-menu
+//
+.header.active {
+    .nav {
+        top: 50px;
+        visibility: visible;
+    }
+    .menu {
+        padding-top: 50px;
+        padding-bottom: 30px;
+        top: 200px;
+        visibility: visible;
+    }
+    .nav__burger-menu {
+        opacity: 0;
+    }
+    nav::before {
+        top: 25px;
+        transform: rotateZ(45deg)
+    }
+    nav::after {
+        top: 25px;
+        transform: rotateZ(-45deg)
+    }
+}
+
+@media screen and (max-device-width: 800px) {}

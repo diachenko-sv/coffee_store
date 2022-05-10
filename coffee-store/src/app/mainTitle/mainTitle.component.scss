@@ -72,4 +72,219 @@
         background-size: contain;
         z-index: -300;
     }
+    @media screen and (max-width: 1700px) {
+        &__coffee-cup {
+            top: 470px;
+            right: 15%;
+            width: 500px;
+        }
+        &__cofee-beans {
+            top: 400px;
+            width: 700px;
+            right: 10%;
+        }
+        &__orange-background {
+            width: 700px;
+            height: 1500px;
+        }
+    }
+    @media screen and (max-width: 1500px) {
+        margin-top: 70px;
+        &__header {
+            font-size: 64px;
+            margin-top: 50px;
+        }
+        &__content {
+            width: 770px;
+            font-size: 32px;
+            line-height: 150%;
+        }
+        &__button {
+            margin-top: 100px;
+        }
+        &__coffee-cup {
+            top: 450px;
+            right: 20%;
+            width: 350px;
+        }
+        &__cofee-beans {
+            top: 400px;
+            right: 15%;
+            width: 450px;
+        }
+        &__orange-background {
+            width: 600px;
+            height: 1300px;
+        }
+    }
+    @media screen and (max-width: 1300px) {
+        margin-top: 50px;
+        &__header {
+            font-size: 56px;
+            margin: 50px 0;
+        }
+        &__content {
+            width: 700px;
+            font-size: 26px;
+            line-height: 150%;
+        }
+        &__button {
+            margin-top: 80px;
+            width: 350px;
+            height: 70px;
+        }
+        &__coffee-cup {
+            top: 370px;
+            right: 15%;
+            width: 350px;
+        }
+        &__cofee-beans {
+            top: 350px;
+            right: 10%;
+            width: 450px;
+        }
+        &__orange-background {
+            width: 500px;
+            height: 1300px;
+        }
+    }
+    @media screen and (max-width: 1100px) {
+        &__content {
+            width: 550px;
+        }
+        &__coffee-cup {
+            top: 350px;
+            right: 10%;
+            width: 200px;
+        }
+        &__cofee-beans {
+            top: 300px;
+            right: 5%;
+            width: 300px;
+        }
+        &__orange-background {
+            top: 100px;
+            width: 350px;
+            height: 900px;
+        }
+    }
+    @media screen and (max-width: 1000px) {
+        margin-top: 20px;
+        &__header {
+            margin: 30px 0;
+        }
+        &__2nd-row {
+            margin-top: 30px;
+        }
+        &__button {
+            margin-top: 70px;
+        }
+        &__orange-background {
+            top: 50px;
+        }
+        &__content {
+            width: 550px;
+        }
+        &__coffee-cup {
+            top: 350px;
+            right: 10%;
+            width: 200px;
+        }
+        &__cofee-beans {
+            top: 300px;
+            right: 5%;
+            width: 300px;
+        }
+        &__orange-background {
+            top: 50px;
+            width: 350px;
+            height: 900px;
+        }
+    }
+    @media screen and (max-width: 900px) {
+        margin-top: 20px;
+        width: 90%;
+        &__content {
+            font-size: 1.5rem;
+            width: 300px;
+        }
+        &__header {
+            font-size: 2.5rem;
+            margin: 30px 0;
+        }
+        &__1st-row {
+            width: 80%;
+        }
+        &__2nd-row {
+            width: 80%;
+            margin-top: 20px;
+        }
+        &__button {
+            margin-top: 50px;
+            width: 250px;
+            height: 60px;
+        }
+        &__orange-background {
+            top: 50px;
+        }
+        &__content {
+            width: 100%;
+        }
+        &__coffee-cup {
+            top: 17%;
+            right: 10%;
+            width: 150px;
+        }
+        &__cofee-beans {
+            top: 15%;
+            right: 8%;
+            width: 200px;
+        }
+        &__orange-background {
+            top: 50px;
+            width: 350px;
+            height: 900px;
+        }
+    }
+    @media screen and (max-width: 650px) {
+        &__coffee-cup {
+            top: 200px;
+            right: 3%;
+            width: 100px;
+        }
+        &__cofee-beans {
+            top: 190px;
+            right: 0;
+            width: 150px;
+        }
+        &__orange-background {
+            top: 50px;
+            width: 250px;
+            height: 700px;
+            opacity: 0.7;
+        }
+    }
+    @media screen and (max-width: 500px) {
+        &__header {
+            font-size: 2rem;
+            margin: 30px 0;
+        }
+        &__1st-row {
+            width: 100%;
+        }
+        &__2nd-row {
+            width: 100%;
+        }
+        &__coffee-cup {
+            display: none;
+        }
+        &__cofee-beans {
+            display: none;
+        }
+        &__orange-background {
+            top: 50px;
+            width: 120px;
+            height: 400px;
+        }
+    }
 }

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core'
+import { Component, OnInit } from '@angular/core'
 
 @Component({
     selector: 'app-navigation',
@@ -6,4 +6,16 @@ import { Component } from '@angular/core'
     styleUrls: ['./navigation.component.scss']
 })
 
-export class NavigationComponent {}
+export class NavigationComponent implements OnInit {
+    ngOnInit(): void {
+        
+    }
+    header:string = 'header'
+    changeBurgerMenu() {
+        if (this.header === 'header') {
+            this.header += ' active'
+        } else {
+            this.header = this.header.substring(0, 6)
+        }
+    }
+}
