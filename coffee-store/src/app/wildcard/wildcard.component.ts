@@ -1,4 +1,4 @@
-import { Component } from '@angular/core'
+import { Component, OnInit } from '@angular/core'
 
 @Component({
     selector: 'app-wildcart',
@@ -6,4 +6,4 @@ import { Component } from '@angular/core'
     styleUrls: ['./wildcard.component.scss']
 })
 
-export class Wildcard {  }
+export class Wildcard  {}

@@ -1,0 +1,108 @@
+.wrapper {
+    padding-top: 300px;
+    width: 100%;
+    background-image: url('/assets/images/footer/background.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.footer {
+    width: 85%;
+    margin: 50px auto;
+    &__label {
+        font-size: 1.7em;
+    }
+    &__content {
+        margin-top: 50px;
+    }
+    &__title {
+        display: block;
+        width: 55%;
+        line-height: 130%;
+    }
+    &__email-form {
+        margin-top: 60px;
+    }
+    &__input {
+        width: 50%;
+        border-radius: 40px;
+        height: 60px;
+        background: rgb(243, 243, 243);
+        padding: 5px 40px;
+        border: none;
+        outline: none;
+        overflow: hidden;
+    }
+    &__input-label {
+        cursor: pointer;
+        display: block;
+        position: relative;
+        left: 40px;
+        top: -48px;
+        color: #aaa;
+        font-size: 25px;
+        transition: .2s;
+    }
+    &__input:active {
+        .footer__input-label {
+            left: -150px;
+        }
+    }
+    //  //  //  //  //  
+    &__button {
+        cursor: pointer;
+        display: block;
+        width: 250px;
+        height: 70px;
+        position: relative;
+        top: -100px;
+        left: 640px;
+        border-radius: 40px;
+        border: none;
+        color: white;
+        background-color: rgb(249, 179, 0);
+        font-size: 25px;
+        transition: .2s;
+    }
+    &__button:hover {
+        background-color: rgb(226, 163, 0);
+        // box-shadow: 0 0 20px 2px rgba(255, 183, 0, 0.5);
+        transition: .1s ease-in;
+    }
+    &__button:active {
+        background-color: rgb(255, 200, 0);
+        box-shadow: 0 0 5px 1px rgb(255, 200, 0);
+        transition: .05s ease;
+    }
+    &__user-agreement {
+        display: block;
+        margin-top: -80px;
+        font-size: 16px;
+    }
+    &__user-agreement a {
+        color: rgb(230, 165, 0);
+    }
+    &__nav {
+        box-shadow: 0 0px 5px 1px rgb(255, 200, 0);
+        margin-top: 200px;
+        padding: 40px 10%;
+        margin-bottom: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgb(255, 251, 239);
+        // a {
+        //     color: white;
+        // }
+        &__logo {}
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 100px;
+            &__catalog-products {}
+            &__blog {}
+            &__contacts {}
+        }
+    }
+}
