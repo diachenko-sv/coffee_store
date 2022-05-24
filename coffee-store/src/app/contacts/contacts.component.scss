@@ -1,6 +1,7 @@
 .contacts {
     width: 85%;
     margin: 0 auto;
+    // line-height: 130%;
     &__label {
         margin: 30px 0 50px;
         text-align: center;
@@ -21,16 +22,30 @@
         flex-direction: column;
         justify-content: space-between;
     }
-    &__content-item {
-        height: 33%;
-    }
+    // &__content-item {
+    // height: 33%;
+    // font-size: 25px;
+    // display: flex;
+    // flex-direction: column;
+    // }
+    // &__content-item_1st {
+    //     align-content: flex-start;
+    // }
+    // &__content-item_2nd {
+    //     align-content: center;
+    // }
+    // &__content-item_3rd {
+    //     align-content: flex-end;
+    // }
     &__content-wrapper {
         margin-top: 20px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
     }
-    &__title {}
+    &__title {
+        font-size: 30px;
+    }
     &__info {}
     &__phone {}
     &__map {

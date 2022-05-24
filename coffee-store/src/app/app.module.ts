@@ -10,7 +10,7 @@ import { Home } from './home/home';
 import { StrongQualities } from './home/strong-qualities/strong-qualities.component';
 import { Contacts } from './contacts/contacts.component';
 import { Wildcard } from './wildcard/wildcard.component';
-
+import { Footer } from './footer/footer.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +20,8 @@ import { Wildcard } from './wildcard/wildcard.component';
     StrongQualities,
     Home,
     Contacts,
-    Wildcard
+    Wildcard,
+    Footer
   ],
   imports: [
     BrowserModule,

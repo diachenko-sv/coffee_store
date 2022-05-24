@@ -7,10 +7,8 @@ import { Component, OnInit } from '@angular/core'
 })
 
 export class NavigationComponent implements OnInit {
-    ngOnInit(): void {
-        
-    }
     header:string = 'header'
+
     changeBurgerMenu() {
         if (this.header === 'header') {
             this.header += ' active'
@@ -18,4 +16,6 @@ export class NavigationComponent implements OnInit {
             this.header = this.header.substring(0, 6)
         }
     }
+
+    ngOnInit(): void {  }    
 }
