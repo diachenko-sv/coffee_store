@@ -1,7 +1,7 @@
 .main-title {
     font-size: 44px;
-    width: 100%;
-    margin-top: 100px;
+    width: 85%;
+    margin: 100px auto 0;
     &__header {
         margin: 70px 0;
         padding: 0;
@@ -13,12 +13,13 @@
         font-size: 34px;
         line-height: 150%;
     }
-    &__1st-row {}
+    // &__1st-row {}
     &__2nd-row {
         margin-top: 30px;
     }
     &__button {
         margin-top: 200px;
+        padding: 0;
         width: 400px;
         height: 80px;
         color: white;
@@ -37,14 +38,14 @@
         box-shadow: 0 0 5px 1px rgb(255, 200, 0);
         transition: .1s ease;
     }
-    &__photo-decoration {}
+    // &__photo-decoration {}
     &__coffee-cup {
         position: absolute;
         width: 650px;
         height: 450px;
         top: 350px;
         right: 15%;
-        background-image: url(/assets/images/mainTitle/coffee-cup.png);
+        background-image: url(/assets/images/main-title/coffee-cup.png);
         background-repeat: no-repeat;
         background-size: contain;
         z-index: -100;
@@ -55,7 +56,7 @@
         height: 750px;
         top: 250px;
         right: 10%;
-        background-image: url(/assets/images/mainTitle/cofee-beans.png);
+        background-image: url(/assets/images/main-title/cofee-beans.png);
         background-repeat: no-repeat;
         background-size: contain;
         z-index: -200;
@@ -67,7 +68,7 @@
         top: 100px;
         right: 0%;
         overflow: hidden;
-        background-image: url(/assets/images/mainTitle/orange-background.png);
+        background-image: url(/assets/images/main-title/orange-background.png);
         background-repeat: no-repeat;
         background-size: contain;
         z-index: -300;
@@ -213,16 +214,17 @@
             margin: 30px 0;
         }
         &__1st-row {
-            width: 80%;
+            width: calc(100% - 150px);
         }
         &__2nd-row {
-            width: 80%;
+            width: calc(100% - 150px);
             margin-top: 20px;
         }
         &__button {
             margin-top: 50px;
             width: 250px;
             height: 60px;
+            font-size: .8em;
         }
         &__orange-background {
             top: 50px;
@@ -231,13 +233,13 @@
             width: 100%;
         }
         &__coffee-cup {
-            top: 17%;
-            right: 10%;
+            top: 150px;
+            right: 10px;
             width: 150px;
         }
         &__cofee-beans {
-            top: 15%;
-            right: 8%;
+            top: 140px;
+            right: 5px;
             width: 200px;
         }
         &__orange-background {
@@ -248,13 +250,13 @@
     }
     @media screen and (max-width: 650px) {
         &__coffee-cup {
-            top: 200px;
-            right: 3%;
+            // top: 200px;
+            // right: 3%;
             width: 100px;
         }
         &__cofee-beans {
-            top: 190px;
-            right: 0;
+            // top: 190px;
+            // right: 0;
             width: 150px;
         }
         &__orange-background {

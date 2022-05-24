@@ -3,16 +3,24 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { CatalogExplorer } from './catalogExplorer/catalogExplorer.component';
-import { MainTitleComponent } from './mainTitle/mainTitle.component';
+import { CatalogExplorer } from './home/catalog-explorer/catalog-explorer.component';
+import { MainTitleComponent } from './home/main-title/main-title.component';
 import { NavigationComponent } from './navigation/navigation.component';
+import { Home } from './home/home';
+import { StrongQualities } from './home/strong-qualities/strong-qualities.component';
+import { Contacts } from './contacts/contacts.component';
+import { Wildcard } from './wildcard/wildcard.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavigationComponent,
     MainTitleComponent,
-    CatalogExplorer
+    CatalogExplorer,
+    StrongQualities,
+    Home,
+    Contacts,
+    Wildcard
   ],
   imports: [
     BrowserModule,

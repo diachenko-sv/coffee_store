@@ -1,5 +1,5 @@
 <div class="{{ header }}">
-    <div class="header__logo"><a href="/coffee-store/src/index.html">Diachenko</a></div>
+    <div class="header__logo"><a routerLink="">Diachenko</a></div>
     <div class="background-isolator"></div>
     <nav>
         <div class="burger-menu__wrapper" (click)="changeBurgerMenu()">
@@ -7,13 +7,13 @@
         </div>
         <ul class="nav">
             <li class="nav__catalog-products">
-                <a href="">Каталог товаров</a>
+                <a href="#catalog">Каталог товаров</a>
             </li>
             <li class="nav__blog">
                 <a href="">Блог</a>
             </li>
             <li class="nav__contacts">
-                <a href="">Контакты</a>
+                <a routerLink="/contacts">Контакты</a>
             </li>
         </ul>
     </nav>
