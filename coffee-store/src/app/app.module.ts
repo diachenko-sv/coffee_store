@@ -11,6 +11,7 @@ import { StrongQualities } from './home/strong-qualities/strong-qualities.compon
 import { Contacts } from './contacts/contacts.component';
 import { Wildcard } from './wildcard/wildcard.component';
 import { Footer } from './footer/footer.component';
+import { UserAgreement } from './user-agreement/user-agreement.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +22,8 @@ import { Footer } from './footer/footer.component';
     Home,
     Contacts,
     Wildcard,
-    Footer
+    Footer,
+    UserAgreement
   ],
   imports: [
     BrowserModule,

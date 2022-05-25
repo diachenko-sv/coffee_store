@@ -15,11 +15,31 @@
     }
     &__logo {
         z-index: 999;
-        white-space: nowrap;
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        a div {
+            margin-top: 5px;
+            border-bottom: 2px solid rgba(249, 179, 0, 0);
+        }
+        a img {
+            width: 75px;
+            height: 70px;
+            margin-left: 10px;
+            margin-bottom: 10px;
+        }
     }
     &__logo:hover {
-        transform: rotateY(360deg);
-        transition: .8s ease-in-out;
+        a div {
+            border-bottom: 2px solid rgb(249, 179, 0);
+            transition: .1s ease-in-out;
+        }
+        a img {
+            transform: rotateY(360deg);
+            transition: .8s ease-in-out;
+        }
     }
     nav::before,
     nav::after {
@@ -95,6 +115,11 @@
     }
     @media screen and (max-width: 1000px) {
         height: 50px;
+        &__logo {
+            a img {
+                display: none;
+            }
+        }
         .background-isolator {
             position: absolute;
             height: 50px;

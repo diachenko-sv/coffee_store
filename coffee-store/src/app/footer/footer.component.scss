@@ -24,7 +24,7 @@
         margin-top: 60px;
     }
     &__input {
-        width: 50%;
+        width: 810px;
         border-radius: 40px;
         height: 60px;
         background: rgb(243, 243, 243);
@@ -33,20 +33,24 @@
         outline: none;
         overflow: hidden;
     }
-    &__input-label {
+    // &__input-label {
+    //     cursor: pointer;
+    //     display: block;
+    //     position: relative;
+    //     left: 40px;
+    //     top: -48px;
+    //     
+    //     font-size: 25px;
+    //     transition: .2s;
+    // }
+    &__input::placeholder {
+        color: #8d8d8d;
         cursor: pointer;
-        display: block;
-        position: relative;
-        left: 40px;
-        top: -48px;
-        color: #aaa;
-        font-size: 25px;
-        transition: .2s;
+        transition: .4s ease;
     }
-    &__input:active {
-        .footer__input-label {
-            left: -150px;
-        }
+    &__input:focus::placeholder {
+        transform: translateY(-50px);
+        transition: .4s ease;
     }
     //  //  //  //  //  
     &__button {
@@ -55,7 +59,7 @@
         width: 250px;
         height: 70px;
         position: relative;
-        top: -100px;
+        top: -70px;
         left: 640px;
         border-radius: 40px;
         border: none;
@@ -74,26 +78,36 @@
         box-shadow: 0 0 5px 1px rgb(255, 200, 0);
         transition: .05s ease;
     }
+    &__button.active {
+        left: 0px;
+        width: 890px;
+        transition: .5s ease-out;
+    }
     &__user-agreement {
         display: block;
-        margin-top: -80px;
+        margin-top: -50px;
         font-size: 16px;
     }
     &__user-agreement a {
         color: rgb(230, 165, 0);
+        border-bottom: 2px solid rgba(249, 179, 0, 0);
+        transition: .1s ease;
+    }
+    &__user-agreement a:hover {
+        border-bottom: 2px solid rgb(249, 179, 0);
+        transition: .1s ease;
     }
     &__nav {
-        box-shadow: 0 0px 5px 1px rgb(255, 200, 0);
+        box-shadow: 0 5px 10px 1px rgb(249, 179, 0);
         margin-top: 200px;
         padding: 40px 10%;
         margin-bottom: 0;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        background-color: rgb(255, 251, 239);
-        // a {
-        //     color: white;
-        // }
+        a:hover {
+            border-bottom: 2px solid rgb(249, 179, 0);
+        }
         &__logo {}
         .nav {
             display: flex;
@@ -104,5 +118,12 @@
             &__blog {}
             &__contacts {}
         }
+    }
+    &__background-cup {
+        position: absolute;
+        // top: 2450px;
+        // bottom: -50px;
+        // top: 0px;
+        right: 0px;
     }
 }

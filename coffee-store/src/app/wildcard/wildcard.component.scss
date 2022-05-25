@@ -1,11 +1,12 @@
 .wildcard {
     box-sizing: border-box;
     width: 100%;
-    padding: 0px;
+    padding: 0px 0 -200px;
     background-image: url("/assets/images/wildcard/decoration-cloud.png");
     background-size: cover;
     height: calc(100vh - 150px);
-    // max-height: 80vh;
+    margin-bottom: -200px;
+    z-index: 900;
     &__label {
         margin: 50px auto 0;
         text-align: center;
