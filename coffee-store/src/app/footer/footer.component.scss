@@ -98,9 +98,14 @@
         transition: .05s ease;
     }
     &__button.active {
+        cursor: unset;
         left: 0px;
         width: 890px;
         transition: .5s ease-out;
+        &:hover {
+            background-color: rgb(255, 200, 0);
+            box-shadow: 0 0 5px 1px rgb(255, 200, 0);
+        }
     }
     &__user-agreement {
         display: block;

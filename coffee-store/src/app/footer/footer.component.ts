@@ -13,6 +13,7 @@ export class Footer implements OnInit {
     buttonText: string = 'Подписаться'
     
     CheckEmail(event: any) {
+        event.preventDefault();
         const inputValue: string = event.path[1][0].value
 
         const matchInputEmail = inputValue.match(/^\S+@\S+\.\S+$/) || [];

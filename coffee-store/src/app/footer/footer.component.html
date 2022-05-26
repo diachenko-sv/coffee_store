@@ -5,7 +5,7 @@
         <section class="footer__content">
             <span class="footer__title">Подпишитесь на нашу рассылку прямо сейчас и будьте в курсе новых поставок, скидок и эксклюзивных предложений.</span>
             <div class="{{ classForm }}">
-                <form action="">
+                <form>
                     <input class="footer__input" type="text" id="email" required placeholder="Ваш email">
                     <button (click)="CheckEmail($event)" class="{{ classButton }}">{{ buttonText }}</button>
                     <span class="footer__user-agreement">Нажимая на кнопку “Подписаться”, вы принимаете правила <a routerLink="/user-agreement" target="_blank">пользовательского соглашения</a></span>
@@ -13,6 +13,7 @@
             </div>
 
         </section>
+
     </article>
     <div class="footer__nav">
         <div class="footer__logo"><a routerLink="">Diachenko</a></div>
