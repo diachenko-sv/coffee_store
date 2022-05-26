@@ -23,6 +23,25 @@
     &__email-form {
         margin-top: 60px;
     }
+    &__email-form.wrong {
+        .footer__input {
+            animation-name: red-light;
+            animation-duration: 1s;
+            animation-timing-function: ease;
+            animation-iteration-count: 2;
+        }
+        @keyframes red-light {
+            0% {
+                box-shadow: none;
+            }
+            50% {
+                box-shadow: 0 0 10px 1px #ff4444;
+            }
+            100% {
+                box-shadow: none;
+            }
+        }
+    }
     &__input {
         width: 810px;
         border-radius: 40px;
