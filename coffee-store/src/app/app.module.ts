@@ -12,6 +12,7 @@ import { Contacts } from './contacts/contacts.component';
 import { Wildcard } from './wildcard/wildcard.component';
 import { Footer } from './footer/footer.component';
 import { UserAgreement } from './user-agreement/user-agreement.component';
+import { Blog } from './blog/blog.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { UserAgreement } from './user-agreement/user-agreement.component';
     Contacts,
     Wildcard,
     Footer,
-    UserAgreement
+    UserAgreement,
+    Blog
   ],
   imports: [
     BrowserModule,
