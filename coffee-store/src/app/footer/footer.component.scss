@@ -23,6 +23,25 @@
     &__email-form {
         margin-top: 60px;
     }
+    &__email-form.wrong {
+        .footer__input {
+            animation-name: red-light;
+            animation-duration: 1s;
+            animation-timing-function: ease;
+            animation-iteration-count: 2;
+        }
+        @keyframes red-light {
+            0% {
+                box-shadow: none;
+            }
+            50% {
+                box-shadow: 0 0 10px 1px #ff4444;
+            }
+            100% {
+                box-shadow: none;
+            }
+        }
+    }
     &__input {
         width: 810px;
         border-radius: 40px;
@@ -79,9 +98,14 @@
         transition: .05s ease;
     }
     &__button.active {
+        cursor: unset;
         left: 0px;
         width: 890px;
         transition: .5s ease-out;
+        &:hover {
+            background-color: rgb(255, 200, 0);
+            box-shadow: 0 0 5px 1px rgb(255, 200, 0);
+        }
     }
     &__user-agreement {
         display: block;
@@ -121,9 +145,7 @@
     }
     &__background-cup {
         position: absolute;
-        // top: 2450px;
-        // bottom: -50px;
-        // top: 0px;
+        width: 40%;
         right: 0px;
     }
 }

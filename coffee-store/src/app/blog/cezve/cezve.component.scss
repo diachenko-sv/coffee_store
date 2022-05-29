@@ -1,0 +1,21 @@
+.blog-component {
+    &__label {
+        margin: 50px 0;
+    }
+    &__content {}
+    &__content-img {
+        float: right;
+        width: 45vw;
+        margin: 0 0 30px 30px;
+        border-radius: 30px;
+    }
+    &__additional-img {
+        float: left;
+        width: 40vw;
+        margin: 10px 30px 0 0;
+    }
+    &__content-info {
+        text-align: justify;
+    }
+    &__ingo-item {}
+}
