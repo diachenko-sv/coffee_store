@@ -1,0 +1,41 @@
+.blog-component {
+    &__label {
+        margin: 50px 0;
+    }
+    &__content {}
+    &__content-imges {
+        display: flex;
+        justify-content: space-evenly;
+        .first {
+            width: 45vw;
+            height: 30vw;
+        }
+        .second {
+            width: 35vw;
+            height: 14vw;
+        }
+        .third {
+            width: 35vw;
+            height: 14vw;
+            border: 1px solid gray;
+        }
+        .blog-component__content-imges-wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    }
+    &__content-img {
+        border-radius: 30px;
+    }
+    &__additional-img {
+        border-radius: 30px;
+        float: left;
+        width: 40vw;
+        margin: 10px 30px 0 0;
+    }
+    &__content-info {
+        text-align: justify;
+    }
+    &__ingo-item {}
+}

@@ -13,6 +13,14 @@ import { Wildcard } from './wildcard/wildcard.component';
 import { Footer } from './footer/footer.component';
 import { UserAgreement } from './user-agreement/user-agreement.component';
 import { Blog } from './blog/blog.component';
+import { CezveComponent } from './blog/cezve/cezve.component';
+import { FrenchPressComponent } from './blog/french-press/french-press.component';
+import { MokaPotComponent } from './blog/moka-pot/moka-pot.component';
+import { EspressoMachineComponent } from './blog/espresso-machine/espresso-machine.component';
+import { BrewedCoffeeComponent } from './blog/brewed-coffee/brewed-coffee.component';
+import { AeroPressComponent } from './blog/aero-press/aero-press.component';
+import { UsialCupComponent } from './blog/usial-cup/usial-cup.component';
+import { CoffeemakerComponent } from './blog/coffeemaker/coffeemaker.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +34,15 @@ import { Blog } from './blog/blog.component';
     Wildcard,
     Footer,
     UserAgreement,
-    Blog
+    Blog,
+    CezveComponent,
+    FrenchPressComponent,
+    MokaPotComponent,
+    EspressoMachineComponent,
+    BrewedCoffeeComponent,
+    AeroPressComponent,
+    UsialCupComponent,
+    CoffeemakerComponent
   ],
   imports: [
     BrowserModule,
