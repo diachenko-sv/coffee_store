@@ -1,0 +1,22 @@
+.blog-component {
+    &__label {
+        margin: 50px 0;
+    }
+    // &__content {}
+    &__content-img {
+        float: left;
+        width: 45vw;
+        margin: 0 30px 30px 0;
+        border-radius: 30px;
+    }
+    &__additional-img {
+        float: right;
+        width: 40vw;
+        margin: 10px 0 30px 30px;
+        border-radius: 30px;
+    }
+    &__content-info {
+        text-align: justify;
+    }
+    // &__ingo-item {}
+}

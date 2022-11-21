@@ -1,15 +1,17 @@
 <img class="footer__background-cup" src="/assets/images/footer/cup_with_beans.png" alt="">
 <div class="wrapper">
     <article class="footer">
-
         <h4 class="footer__label">Подписка на новости и рассылку</h4>
         <section class="footer__content">
             <span class="footer__title">Подпишитесь на нашу рассылку прямо сейчас и будьте в курсе новых поставок, скидок и эксклюзивных предложений.</span>
-            <div class="footer__email-form">
-                <input class="footer__input" type="text" id="email" required placeholder="Ваш email">
-                <button (click)="ChangeView()" class="{{ classButton }}">{{ buttonText }}</button>
-                <span class="footer__user-agreement">Нажимая на кнопку “Подписаться”, вы принимаете правила <a routerLink="user-agreement" target="_blank" rel="noopener noreferrer">пользовательского соглашения</a></span>
+            <div class="{{ classForm }}">
+                <form>
+                    <input class="footer__input" type="text" id="email" required placeholder="Ваш email">
+                    <button (click)="CheckEmail($event)" class="{{ classButton }}">{{ buttonText }}</button>
+                    <span class="footer__user-agreement">Нажимая на кнопку “Подписаться”, вы принимаете правила <a routerLink="/user-agreement" target="_blank">пользовательского соглашения</a></span>
+                </form>
             </div>
+
         </section>
 
     </article>
